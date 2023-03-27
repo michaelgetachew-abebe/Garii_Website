@@ -1,4 +1,6 @@
 const nodemailer = require("nodemailer");
+const { EMAIL, PASSWORD } = require("../env.js");
+const Mailgen = require("mailgen");
 
 const getintouch = async (req, res) => {
   /**texting account */
@@ -38,6 +40,53 @@ const getintouch = async (req, res) => {
     });
 };
 
+/** Gmail Message hamdler*/
+const getintouchgmail = (req, res) => {
+  const { userEmail } = req.body;
+  let config = {
+    service: "gmail",
+    auth: {
+      user: EMAIL,
+      pass: PASSWORD,
+    },
+  };
+  let transporter = nodemailer.createTransport(config);
+
+  let MailGenerator = new Mailgen({
+    theme: "default",
+    product: {
+      name: "Mailgen",
+      link: "https://mailgen.js/",
+    },
+  });
+
+  let response = {
+    body: {
+      intro:
+        "Welcome to GariiTech! Hello, Thank You for reaching out to GARII!!! We will get back to you any time soon!!! Thanks",
+
+      outro: "Build You Future With Us, GariiTech",
+    },
+  };
+
+  let mail = MailGenerator.generate(response);
+
+  let message = {
+    from: EMAIL,
+    to: userEmail,
+    subject: "Your on the List Now!!!",
+    html: mail,
+  };
+
+  transporter.sendMail(message).then(() => {
+    return res.status(201).json({
+      msg: "By now you should have recieved and email",
+    })
+  }).catch(error => {
+    return res.status(500).json({error})
+  })
+};
 module.exports = {
   getintouch,
+  getintouchgmail,
 };

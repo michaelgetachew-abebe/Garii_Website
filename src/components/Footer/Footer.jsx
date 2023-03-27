@@ -22,10 +22,10 @@ const Footer = () => {
   function getinTouch() {
     if (email) {
       axios
-        .post("http://localhost:5000/api/user/getintouch", { email })
+        .post("http://localhost:5000/api/user/getintouchgmail", { email })
         .then(() => alert("Message Sent Successfully!!!"))
-        .catch(() => alert("Oooopps..."))
-        return;
+        .catch(() => alert("Oooopps..."));
+      return;
     }
     return alert("Please Fill In Your Email");
   }
