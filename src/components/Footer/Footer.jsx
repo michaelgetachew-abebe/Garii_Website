@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./footer.css";
 import footerBanner from "../../assets/banner-img2.png";
 import { FiSend, FiChevronRight } from "react-icons/fi";
@@ -10,11 +10,25 @@ import {
 } from "react-icons/ai";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import axios from "axios";
 
 const Footer = () => {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
+  const [email, setEmail] = useState("");
+
+  function getinTouch() {
+    if (email) {
+      axios
+        .post("http://localhost:5000/api/user/getintouch", { email })
+        .then(() => alert("Message Sent Successfully!!!"))
+        .catch(() => alert("Oooopps..."))
+        return;
+    }
+    return alert("Please Fill In Your Email");
+  }
   return (
     <seciton className="footer">
       <div className="overlay"></div>
@@ -27,8 +41,18 @@ const Footer = () => {
             <em>KEEP IN TOUCH WITH US</em>
           </div>
           <div className="inputDiv flex">
-            <input data-aos="fade-up" type="text" placeholder="Email" />
-            <button data-aos="fade-up" className="btn flex" type="submit">
+            <input
+              data-aos="fade-up"
+              type="text"
+              placeholder="Email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <button
+              data-aos="fade-up"
+              className="btn flex"
+              type="submit"
+              onClick={() => getinTouch()}
+            >
               SEND
               <FiSend className="icon" />
             </button>
