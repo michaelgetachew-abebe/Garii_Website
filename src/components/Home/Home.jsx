@@ -9,7 +9,7 @@ const Home = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <section className="home">
+    <section id="#" className="home">
       <div className="overlay"></div>
       <img className="banner-img" src={banner} alt="banner-img" />
       <div className="homeContent container">

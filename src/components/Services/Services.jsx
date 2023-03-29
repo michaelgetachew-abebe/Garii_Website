@@ -5,7 +5,7 @@ import product from "../../assets/productivityImprovement.png";
 
 const Team = () => {
   return (
-    <section id="team" className="main container section">
+    <section id="services" className="main container section">
       <div className="secTitle">
         <h3 data-aos="fade-right" className="title">
           Services
