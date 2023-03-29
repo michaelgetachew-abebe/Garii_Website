@@ -1,0 +1,84 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 240);
+  --cardBG: rgb(255, 255, 255);
+}
+
+.main {
+  width: 100%;
+
+  .secTitle {
+    .title {
+      position: relative;
+      width: max-content;
+      color: var(--textColor);
+      margin: 1rem 0;
+      z-index: 2;
+    }
+  }
+
+  .secTeamMember {
+    justify-content: center;
+    gap: 1.5rem;
+    .singleService {
+      text-align: center;
+      img {
+        width: 200px;
+        border-radius: 50%;
+        padding: 1rem;
+      }
+      h3 {
+        font-size: 700;
+        font-weight: 500;
+        padding: 0.5rem;
+      }
+
+      p {
+        font-size: 13px;
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+        color: var(--textColor);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+    &::after {
+      width: 155pc !important;
+    }
+  }
+  .secTeamMember {
+    grid-template-columns: repeat(3, 1fr);
+
+    .singleService {
+      height: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .main {
+    .secTeamMember {
+      grid-template-columns: repeat(3, 1fr);
+
+      .singleService {
+        height: auto;
+      }
+    }
+  }
+}

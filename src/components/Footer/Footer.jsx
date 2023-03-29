@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./footer.css";
 import footerBanner from "../../assets/banner-img2.png";
 import { FiSend, FiChevronRight } from "react-icons/fi";
+import emailjs from "@emailjs/browser";
 import {
   AiFillInstagram,
   AiFillLinkedin,
@@ -18,6 +19,26 @@ const Footer = () => {
   }, []);
 
   const [email, setEmail] = useState("");
+
+  const notifyAdmin = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_86zzonr",
+        "service_86zzonr",
+        //form.current,
+        "mKmNIK72xzlMMunmo"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   function getinTouch() {
     if (email) {
@@ -42,6 +63,7 @@ const Footer = () => {
           </div>
           <div className="inputDiv flex">
             <input
+              name="user_email"
               data-aos="fade-up"
               type="text"
               placeholder="Email"
@@ -154,20 +176,6 @@ const Footer = () => {
               <li className="footerList flex">
                 <FiChevronRight className="icon" />
                 Automation
-              </li>
-              <li className="footerList flex">
-                <FiChevronRight className="icon" />
-                Customer Experience
-              </li>
-
-              <li className="footerList flex">
-                <FiChevronRight className="icon" />
-                Customized Solutions
-              </li>
-
-              <li className="footerList flex">
-                <FiChevronRight className="icon" />
-                Product Improvement
               </li>
             </div>
 
