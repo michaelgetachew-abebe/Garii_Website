@@ -17,9 +17,9 @@ const Home = () => {
           <span data-aos="fade-up" className="smallText">
             Cutting-Edge AI and Blockchain Solutions
           </span>
-          <h1 data-aos="fade-up" className="homeTitle">
+          <h2 data-aos="fade-up" className="homeTitle">
             Build Your Future With Us
-          </h1>
+          </h2>
         </div>
       </div>
     </section>

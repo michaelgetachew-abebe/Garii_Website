@@ -30,7 +30,7 @@ const Footer = () => {
     return alert("Please Fill In Your Email");
   }
   return (
-    <seciton className="footer">
+    <seciton id="contact" className="footer">
       <div className="overlay"></div>
       <div className="footerBannerDiv">
         <img src={footerBanner} alt="Footer Banner" />

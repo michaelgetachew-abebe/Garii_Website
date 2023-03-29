@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import { AiFillCloseCircle, AiOutlineBars } from "react-icons/ai";
+import logo from "../../../src/assets/driving.png";
 
 const Navbar = () => {
   const [active, setActive] = useState("navBar");
@@ -15,7 +16,8 @@ const Navbar = () => {
   return (
     <section className="navBarSection">
       <header className="header flex">
-        <div className="logoDiv">
+        <div className="logoDiv flex">
+          <img className="logoImg" src={logo} alt="logo" />
           <a href="/" className="logo flex">
             <h1>Garii</h1>
           </a>
@@ -39,12 +41,12 @@ const Navbar = () => {
               </a>
             </li>
             <li className="navItem">
-              <a href="/" className="NavLink">
+              <a href="#team" className="NavLink">
                 Team
               </a>
             </li>
             <li className="navItem">
-              <a href="/" className="NavLink">
+              <a href="#contact" className="NavLink">
                 Contact
               </a>
             </li>
