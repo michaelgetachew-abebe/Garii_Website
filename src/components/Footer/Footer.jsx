@@ -170,26 +170,27 @@ const Footer = () => {
 
               <li className="footerList flex">
                 <FiChevronRight className="icon" />
+                Customer Experience
+              </li>
+
+              <li className="footerList flex">
+                <FiChevronRight className="icon" />
                 Augmentation
+              </li>
+
+              <li className="footerList flex">
+                <FiChevronRight className="icon" />
+                Customized Solutions
               </li>
 
               <li className="footerList flex">
                 <FiChevronRight className="icon" />
                 Automation
               </li>
-            </div>
-
-            <div className="linkGroup pushUp">
-              <span className="groupTitle">OUR SUPPORTERS</span>
 
               <li className="footerList flex">
                 <FiChevronRight className="icon" />
-                Intuit
-              </li>
-
-              <li className="footerList flex">
-                <FiChevronRight className="icon" />
-                Viawest
+                Productivity Improvement
               </li>
             </div>
           </div>

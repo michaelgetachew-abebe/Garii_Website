@@ -193,7 +193,7 @@
 
 @media screen and (min-width: 500px) {
   .footer .secContent .footerCard .footerLinks {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding-bottom: 1rem;
   }
   .footer .secContent .footerCard .footerDiv {
@@ -228,7 +228,7 @@
     flex-direction: row;
   }
   .footer .secContent .footerCard .footerLinks {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding-bottom: 1rem;
   }
 }

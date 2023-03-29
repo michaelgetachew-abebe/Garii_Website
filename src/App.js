@@ -6,6 +6,7 @@ import Home from "./components/Home/Home";
 import Main from "./components/Main/Main";
 import Navbar from "./components/Navbar/Navbar";
 import Services from "./components/Services/Services";
+import Support from "./components/Support/Support";
 import Team from "./components/Team/Team";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Services />
       <Main />
       <Team />
+      <Support />
       <Footer />
     </>
   );

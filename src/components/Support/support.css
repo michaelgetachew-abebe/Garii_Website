@@ -1,0 +1,56 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 240);
+  --cardBG: rgb(255, 255, 255);
+}
+
+.main {
+  width: 100%;
+}
+.main .secTitle .title {
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  color: var(--textColor);
+  margin: 1rem 0;
+  z-index: 2;
+}
+.main .secPartners {
+  justify-content: center;
+  gap: 1.5rem;
+}
+.main .secPartners .singlePartner {
+  margin: auto;
+}
+.main .secPartners .singlePartner img {
+  width: 200px;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .title::after {
+    width: 155pc !important;
+  }
+  .secPartners {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .secPartners .singlePartner {
+    height: auto;
+  }
+}/*# sourceMappingURL=support.css.map */

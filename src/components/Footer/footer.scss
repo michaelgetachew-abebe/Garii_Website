@@ -215,10 +215,10 @@
     .secContent {
       .footerCard {
         .footerLinks {
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(2, 1fr);
           padding-bottom: 1rem;
         }
-        .footerDiv{
+        .footerDiv {
           justify-content: space-between;
           flex-direction: row;
         }
@@ -230,25 +230,24 @@
 @media screen and (min-width: 660px) {
   .footer {
     .secContent {
-      .contactDiv{
+      .contactDiv {
         flex-direction: row;
         justify-content: space-between;
 
-        .inputDiv{
+        .inputDiv {
           width: max-content;
           flex-direction: row;
           justify-content: flex-start;
 
-          input{
+          input {
             width: 60%;
           }
 
-          .btn{
+          .btn {
             width: max-content;
           }
         }
       }
-
     }
   }
 }
@@ -257,45 +256,44 @@
   .footer {
     padding: 5rem 0;
     .secContent {
-      .footerCard{
+      .footerCard {
         flex-direction: row;
 
-        .footerLinks{
-          grid-template-columns: repeat(3, 1fr);
+        .footerLinks {
+          grid-template-columns: repeat(2, 1fr);
           padding-bottom: 1rem;
         }
       }
-
     }
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .footer{
-    .secContent{
-      .footerCard{
+  .footer {
+    .secContent {
+      .footerCard {
         padding: 3rem 1rem;
 
-        .footerIntro{
-          .footerParagraph{
+        .footerIntro {
+          .footerParagraph {
             font-size: 15px;
             color: var(--textColor);
           }
 
-          .footerSocials{
-            column-gap: .5rem;
-            .icon{
+          .footerSocials {
+            column-gap: 0.5rem;
+            .icon {
               color: var(--textColor);
               font-size: 25px;
-              &:hover{
+              &:hover {
                 color: var(--PrimaryColor);
               }
             }
           }
         }
-        .footerLinks{
-          .linkGroup{
-            .footerList{
+        .footerLinks {
+          .linkGroup {
+            .footerList {
               font-size: 16px;
               padding: 5px 0;
             }
