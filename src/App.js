@@ -1,5 +1,6 @@
 import React from "react";
 import "./app.css";
+import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import Main from "./components/Main/Main";
@@ -12,6 +13,7 @@ const App = () => {
     <>
       <Navbar />
       <Home />
+      <About />
       <Services />
       <Main />
       <Team />

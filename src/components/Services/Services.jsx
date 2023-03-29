@@ -2,8 +2,9 @@ import React from "react";
 import customer from "../../assets/customerexperience.png";
 import customized from "../../assets/customizedsolutions.png";
 import product from "../../assets/productivityImprovement.png";
+import "./services.css";
 
-const Team = () => {
+const Services = () => {
   return (
     <section id="services" className="main container section">
       <div className="secTitle">
@@ -11,7 +12,7 @@ const Team = () => {
           Services
         </h3>
 
-        <div className="secTeamMember container grid">
+        <div className="secServiceContainer container grid">
           <div className="singleService" data-aos="fade-up">
             <img src={customer} alt="Service 1" />
             <h3>Customer Experience</h3>
@@ -55,4 +56,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default Services;

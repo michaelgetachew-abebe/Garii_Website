@@ -27,24 +27,24 @@
   margin: 1rem 0;
   z-index: 2;
 }
-.main .secTeamMember {
+.main .secServiceContainer {
   justify-content: center;
   gap: 1.5rem;
 }
-.main .secTeamMember .singleService {
+.main .secServiceContainer .singleService {
   text-align: center;
 }
-.main .secTeamMember .singleService img {
+.main .secServiceContainer .singleService img {
   width: 200px;
   border-radius: 50%;
   padding: 1rem;
 }
-.main .secTeamMember .singleService h3 {
+.main .secServiceContainer .singleService h3 {
   font-size: 700;
   font-weight: 500;
   padding: 0.5rem;
 }
-.main .secTeamMember .singleService p {
+.main .secServiceContainer .singleService p {
   font-size: 13px;
   font-weight: 500;
   padding-bottom: 0.5rem;
@@ -58,18 +58,18 @@
   .title::after {
     width: 155pc !important;
   }
-  .secTeamMember {
+  .secServiceContainer {
     grid-template-columns: repeat(3, 1fr);
   }
-  .secTeamMember .singleService {
+  .secServiceContainer .singleService {
     height: auto;
   }
 }
 @media screen and (min-width: 840px) {
-  .main .secTeamMember {
+  .main .secServiceContainer {
     grid-template-columns: repeat(3, 1fr);
   }
-  .main .secTeamMember .singleService {
+  .main .secServiceContainer .singleService {
     height: auto;
   }
-}/*# sourceMappingURL=Services.css.map */
+}/*# sourceMappingURL=services.css.map */

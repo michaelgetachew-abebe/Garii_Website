@@ -27,27 +27,21 @@
   margin: 1rem 0;
   z-index: 2;
 }
-.main .secTeamMember {
+.main .secAbout {
   justify-content: center;
-  gap: 1.5rem;
 }
-.main .secTeamMember .singleItem {
+.main .secAbout .aboutContent {
   text-align: center;
 }
-.main .secTeamMember .singleItem img {
-  width: 200px;
-  border-radius: 50%;
-  padding: 1rem;
-}
-.main .secTeamMember .singleItem h3 {
+.main .secAbout .aboutContent h3 {
   font-size: 700;
   font-weight: 500;
   padding: 0.5rem;
 }
-.main .secTeamMember .singleItem p {
-  font-size: 13px;
+.main .secAbout .aboutContent p {
+  font-size: 15px;
   font-weight: 500;
-  padding-top: 0.2rem;
+  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   color: var(--textColor);
 }
@@ -59,18 +53,18 @@
   .title::after {
     width: 155pc !important;
   }
-  .secTeamMember {
+  .secAbout {
     grid-template-columns: repeat(2, 1fr);
   }
-  .secTeamMember .singleItem {
+  .secAbout .aboutContent {
     height: auto;
   }
 }
 @media screen and (min-width: 840px) {
-  .main .secTeamMember {
+  .main .secAbout {
     grid-template-columns: repeat(4, 1fr);
   }
-  .main .secTeamMember .singleItem {
+  .main .secAbout .aboutContent {
     height: auto;
   }
-}/*# sourceMappingURL=team.css.map */
+}/*# sourceMappingURL=about.css.map */

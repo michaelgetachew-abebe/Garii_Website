@@ -29,7 +29,7 @@
     }
   }
 
-  .secTeamMember {
+  .secServiceContainer {
     justify-content: center;
     gap: 1.5rem;
     .singleService {
@@ -62,7 +62,7 @@
       width: 155pc !important;
     }
   }
-  .secTeamMember {
+  .secServiceContainer {
     grid-template-columns: repeat(3, 1fr);
 
     .singleService {
@@ -73,7 +73,7 @@
 
 @media screen and (min-width: 840px) {
   .main {
-    .secTeamMember {
+    .secServiceContainer {
       grid-template-columns: repeat(3, 1fr);
 
       .singleService {

@@ -8,11 +8,14 @@ import "aos/dist/aos.css";
 
 const Main = () => {
   useEffect(() => {
-      Aos.init({duration:2000})},[]);
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <section className="main container section">
       <div className="secTitle">
-        <h3 data-aos="fade-right" className="title">Mission Vission Values</h3>
+        <h3 data-aos="fade-right" className="title">
+          Mission Vission Values
+        </h3>
       </div>
 
       <div className="secContent grid">
@@ -25,8 +28,9 @@ const Main = () => {
           </div>
           <div className="vmvDesc">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-              veniam at illum, impedit architecto corrupti cumque dolores.
+              We bring our customers’ vision to life using innovative technology
+              solutions, solving their business challenges and driving
+              efficiencies.
             </p>
           </div>
         </div>
@@ -39,8 +43,9 @@ const Main = () => {
           </div>
           <div className="vmvDesc">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-              veniam at illum, impedit architecto corrupti cumque dolores.
+              Our vision is to harness the power of AI and blockchain technology
+              to foster sustainable growth and help businesses in Ethiopia and
+              Africa achieve their full potential.
             </p>
           </div>
         </div>
@@ -53,8 +58,9 @@ const Main = () => {
           </div>
           <div className="vmvDesc">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
-              veniam at illum, impedit architecto corrupti cumque dolores.
+              Garii empowers our customers to prepare for what’s next by
+              providing practical, real-world solutions which deliver
+              personalized customer experiences today.
             </p>
           </div>
         </div>
