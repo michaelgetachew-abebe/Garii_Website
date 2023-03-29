@@ -1,7 +1,7 @@
 import React from "react";
 import customer from "../../assets/customerexperience.png";
 import customized from "../../assets/customizedsolutions.png";
-import product from "../../assets/productivityImrovement.png";
+import product from "../../assets/productivityImprovement.png";
 
 const Team = () => {
   return (
@@ -22,7 +22,11 @@ const Team = () => {
             </p>
           </div>
 
-          <div className="singleService" data-aos="fade-up" data-aos-delay="400">
+          <div
+            className="singleService"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <img src={customized} alt="Service 2" />
             <h3>Customized Solutions</h3>
             <p>
@@ -32,7 +36,11 @@ const Team = () => {
             </p>
           </div>
 
-          <div className="singleService" data-aos="fade-up" data-aos-delay="800">
+          <div
+            className="singleService"
+            data-aos="fade-up"
+            data-aos-delay="800"
+          >
             <img src={product} alt="Service 3" />
             <h3>Productivity Improvement</h3>
             <p>
