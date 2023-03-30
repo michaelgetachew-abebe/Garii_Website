@@ -17,6 +17,7 @@ const Navbar = () => {
     <section className="main navBarSection">
       <header className="header flex">
         <div className="logoDiv flex">
+          <img className="logoImg" src={logo} alt="Garii" />
           <a href="/" className="logo flex">
             <h1>Garii</h1>
           </a>
