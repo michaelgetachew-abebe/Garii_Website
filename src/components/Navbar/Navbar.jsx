@@ -14,10 +14,9 @@ const Navbar = () => {
     setActive("navBar");
   };
   return (
-    <section className="navBarSection">
+    <section className="main navBarSection">
       <header className="header flex">
         <div className="logoDiv flex">
-          <img className="logoImg" src={logo} alt="logo" />
           <a href="/" className="logo flex">
             <h1>Garii</h1>
           </a>
@@ -26,7 +25,7 @@ const Navbar = () => {
         <div className={active}>
           <ul className="navLists flex">
             <li className="navItem">
-              <a href="/" className="NavLink">
+              <a href="#" className="NavLink">
                 Home
               </a>
             </li>

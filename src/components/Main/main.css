@@ -19,6 +19,7 @@
 
 .main {
   width: 100%;
+  overflow: hidden;
 }
 .main .secTitle .title {
   position: relative;
